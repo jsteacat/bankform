@@ -1,0 +1,36 @@
+.proposal {
+
+  position: relative;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__ {
+
+    &item {
+      position: relative;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &marker {
+      position: absolute;
+      top: 20px;
+      width: 10px;
+      height: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 1px 0 rgba(35, 31, 32, 0.36);
+      margin: 0 10px 0 0;
+      border-radius: 50%;
+    }
+
+    &title {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin: 0 0 0 20px;
+      line-height: 1;
+    }
+
+  }
+
+}

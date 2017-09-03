@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TITLE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    //= ../_styles.html
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            //= ../header.html
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+
+            <h1 class="title">Потребительский Кредит от
+                <span class="title__sub title__sub--bold">
+                            16.9%
+                        </span>
+            </h1>
+
+        </div>
+    </div>
+
+    <div class="row proposal">
+        <div class="col-xs-12 col-md-6 proposal__item"><div class="proposal__marker"></div>
+            <h1 class="title proposal__title">Снижаем ставку на <span
+                    class="title__sub title__sub--bold">1%</span> каждый год</h1>
+        </div>
+
+        <div class="col-xs-12 col-md-6 proposal__item"><div class="proposal__marker"></div>
+            <h1 class="title proposal__title">Оформи за <span
+                    class="title__sub title__sub--bold">5 минут</span></h1>
+        </div>
+        <div class="col-xs-12 col-md-6 proposal__item"><div class="proposal__marker"></div>
+            <h1 class="title proposal__title">Без комиссии, залога и поручителей</h1>
+        </div>
+        <div class="col-xs-12 col-md-6 proposal__item"><div class="proposal__marker"></div>
+            <h1 class="title proposal__title">Долгосрочное погашение</h1>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12">
+
+            <div class="panel panel--wrap">
+                <form class="panel panel--gray form">
+
+                    <h1 class="panel__title">
+                        Онлайн заявка
+                    </h1>
+
+                    <div class="tape form__tape">
+                        <h5 class="title tape__title">Шаг 1 <span class="title__sub title__sub--bold">
+                                    Эти данные нужны нам, чтобы связаться с вами
+                                </span>
+                        </h5>
+                    </div>
+
+                    <div class="input-group row validate">
+                        <label for="last_name" class="input-group__label col-xs-3">Фамилия</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="input-group__input" id="last_name"
+                                   name="last_name">
+                        </div>
+                       <div class="col-xs-4">
+                           <div class="input-group__tooltip input-group__tooltip--invalid">
+
+                               Поле обязательно для заполенения
+
+                           </div>
+                       </div>
+                    </div>
+
+                    <div class="input-group row validate">
+                        <label for="first_name" class="input-group__label col-xs-3">Имя</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="input-group__input" id="first_name"
+                                   name="first_name">
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="input-group__tooltip input-group__tooltip--invalid">
+
+                                Поле обязательно для заполенения
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group row validate">
+                        <label for="middle_name" class="input-group__label col-xs-3">Отчество</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="input-group__input" id="middle_name"
+                                   name="middle_name">
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="input-group__tooltip input-group__tooltip--invalid">
+
+                                Поле обязательно для заполенения
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group row validate">
+                        <span class="input-group__label col-xs-3">Гражданство РФ</span>
+                        <div class="col-xs-5">
+                            <div class="radio input-group__radio">
+                                <label class="radio__label"><input name="is_russian" type="radio" value="no"
+                                                                   class="radio__input"><span
+                                        class="radio__label-text">Нет</span></label>
+                                <label class="radio__label"><input name="is_russian" type="radio" value="yes"
+                                                                   class="radio__input" checked><span
+                                        class="radio__label-text">Да</span></label>
+                            </div>
+                        </div>
+
+                       <div class="col-xs-4">
+                           <div class="input-group__tooltip input-group__tooltip--invalid">
+
+                               Кредит может быть выдан только гражданам РФ
+
+                           </div>
+                       </div>
+
+                    </div>
+
+
+                    <button class="button button--center" disabled type="submit">
+                        Отправить заявку
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+//= ../_scripts.html
+
+</body>
+
+</html>

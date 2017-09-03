@@ -1,0 +1,11 @@
+:root {
+  height: 100%;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+html {
+  height: 100%;
+  background: #676767 url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

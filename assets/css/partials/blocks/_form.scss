@@ -1,0 +1,156 @@
+.form {
+
+  padding: 16px 20px 50px;
+
+  &__tape {
+    margin-bottom: 45px;
+  }
+
+}
+
+.input-group {
+
+  padding: 14px 0;
+
+  &__ {
+
+    &label {
+
+      width: 215px;
+      display: block;
+      padding-right: 20px;
+      padding-top: 7px;
+
+      letter-spacing: -0.2px;
+      color: #545454;
+
+    }
+
+    &input, &radio {
+      width: 365px;
+      display: block;
+    }
+
+    &tooltip {
+      position: relative;
+      margin-top: -10px;
+      background: #ffffff;
+      margin-left: 20px;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+      font-size: 0.8125rem;
+      padding: 14px 25px;
+
+      &--invalid {
+        opacity: 0;
+        transition: opacity .3s ease-out;
+        color: #d91404;
+      }
+
+      &:after {
+        right: 100%;
+        top: 50%;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: #ffffff;
+        border-width: 7px;
+        margin-top: -7px;
+        filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.12));
+      }
+    }
+
+    &input {
+      background-color: #ffffff;
+      border: solid 1px #d3d6dd;
+      font-size: 16px;
+      line-height: 0.83;
+      letter-spacing: -0.2px;
+      text-align: left;
+      color: #000000;
+      padding: 10px 20px;
+      outline: none;
+
+      :focus {
+        outline: none;
+      }
+
+    }
+
+  }
+
+}
+
+.radio {
+
+  padding-top: 7px;
+
+  &__ {
+
+    &label {
+
+
+
+    }
+
+    &label-text {
+      font-size: 1rem;
+      letter-spacing: -0.2px;
+      color: #000000;
+      margin-right: 34px;
+      margin-left: 12px;
+    }
+
+    &input {
+      width: 20px;
+      height: 20px;
+
+    }
+
+  }
+
+}
+
+.button {
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: OpenSansLight, "Trebuchet MS", sans-serif;
+  line-height: 1;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #ffffff;
+
+  padding: 18px 36px;
+
+  border-radius: 3px;
+  background-color: #fd8700;
+  background-image: linear-gradient(#fd8700, #fd8700), linear-gradient(to top, #000, #fff);
+  background-blend-mode: normal, overlay;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.56);
+
+  &--center {
+    display: block;
+    margin: 50px auto 0;
+  }
+
+  &[disabled], &:disabled {
+    background-color: #d6d6d8;
+    font-family: OpenSansBold, "Trebuchet MS", sans-serif;
+    background-image: none;
+    box-shadow: inset 0 1px 1px #979797;
+    color: #979797;
+  }
+
+}
+
+.touched input.invalid {
+  box-shadow: inset 0 0 1px 1px #e49f9a;
+
+}
+
+.touched .input-group__tooltip--invalid.display-error {
+  opacity: 1;
+}
